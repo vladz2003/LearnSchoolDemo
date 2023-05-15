@@ -1,0 +1,85 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\._school_logo.png" />
+    <None Remove="Resources\for company.jpg" />
+    <None Remove="Resources\online lessons.jpg" />
+    <None Remove="Resources\school_logo.ico" />
+    <None Remove="Resources\school_logo.png" />
+    <None Remove="Resources\Английский язык.jpg" />
+    <None Remove="Resources\Испанский язык.jpg" />
+    <None Remove="Resources\Итальянский язык.jpg" />
+    <None Remove="Resources\киноклуб.jpg" />
+    <None Remove="Resources\Китайский язык.jpg" />
+    <None Remove="Resources\Немецкий язык.png" />
+    <None Remove="Resources\Подготовка к экзамену ACT.png" />
+    <None Remove="Resources\Подготовка к экзамену GMAT.png" />
+    <None Remove="Resources\Подготовка к экзамену GRE.jpeg" />
+    <None Remove="Resources\Подготовка к экзамену IELTS.jpg" />
+    <None Remove="Resources\Подготовка к экзамену SAT.png" />
+    <None Remove="Resources\Подготовка к экзамену TOEFL.jpg" />
+    <None Remove="Resources\Португальский язык.jpg" />
+    <None Remove="Resources\Французский язык.jpg" />
+    <None Remove="Resources\Японский язык.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\._school_logo.png" />
+    <Resource Include="Resources\for company.jpg" />
+    <Resource Include="Resources\online lessons.jpg" />
+    <Resource Include="Resources\school_logo.ico" />
+    <Resource Include="Resources\school_logo.png" />
+    <Resource Include="Resources\Английский язык.jpg" />
+    <Resource Include="Resources\Испанский язык.jpg" />
+    <Resource Include="Resources\Итальянский язык.jpg" />
+    <Resource Include="Resources\киноклуб.jpg" />
+    <Resource Include="Resources\Китайский язык.jpg" />
+    <Resource Include="Resources\Немецкий язык.png" />
+    <Resource Include="Resources\Подготовка к экзамену ACT.png" />
+    <Resource Include="Resources\Подготовка к экзамену GMAT.png" />
+    <Resource Include="Resources\Подготовка к экзамену GRE.jpeg" />
+    <Resource Include="Resources\Подготовка к экзамену IELTS.jpg" />
+    <Resource Include="Resources\Подготовка к экзамену SAT.png" />
+    <Resource Include="Resources\Подготовка к экзамену TOEFL.jpg" />
+    <Resource Include="Resources\Португальский язык.jpg" />
+    <Resource Include="Resources\Французский язык.jpg" />
+    <Resource Include="Resources\Японский язык.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
